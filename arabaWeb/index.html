@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+   <title>Araba</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" href="fonts/ADAM.CGPRO.otf">
+  </head>
+</head>
+<body>
+    <header>
+        <nav id="navResponsive">
+            <img src="imagenes/arabaLogo-2.png" alt="logo de la empresa" id="araba">
+           
+            <input type="checkbox" name="menuDeHamburges" id="menuDeHamburges">
+            <label for="menuDeHamburges"><i class="fa fa-bars"></i></label>
+            <nav id="barraNavegacion" class="tipografia">
+                <ul class="primeraLista">
+                    <li><a href="#" class="textoNegro">INICIOS</a></li>
+                    <li><a href="#" class="textoNegro">QUIENES SOMOS</a></li>
+                    <li><a href="#" class="textoNegro">SERVICIOS</a></li>
+                    <li><a href="#" class="textoNegro">FOTOS</a></li>
+                </ul>
+            </nav>
+            <ul class="segundaLista">
+                <li><a href="#"><img src="imagenes/mingcute_phone-fill.png" alt="icono de telefono" class="iconos"></a></li>
+                <li><a href="#"><img src="imagenes/clarity_email-solid.png" alt="icono de correo" class="iconos"></a></li>
+                <li><a href="#"><img src="imagenes/Vector.png" alt="icono de facebook" id="facebook"></a></li>
+            </ul>
+        </nav>
+        <hr class="lineaNegra">
+        <section id="imgHeader" class="margenImg">
+            <h1 class="titulos colorBlanco">BIENVENIDOS <br> a <br> araba</h1>
+        </section>
+    </header>
+    <main>
+        <section id="quienesSomos" class="texRoboto">
+            <h2 class="titulos">QUIENES SOMOS</h2>
+            <hr class="lineaNegra">
+             <section id="imgSomos" class="margenImg">
+                <p id="somosTex" class="colorBlanco">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae vehicula dui, non ultrices elit. Duis tempus quam volutpat, placerat</p>
+             </section>
+        </section>
+        <section id="servicios" class="texRoboto">
+            <h2 class="titulos">SERVICIOS</h2>
+            <hr class="lineaNegra">
+                <div class="tarjetas">
+                    <img src="imagenes/comensales.png" alt="personas sirviendose la comida" class="imgServicio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="tarjetas">
+                    <img src="imagenes/mesaArreglada.png" alt="una mesa decorada" class="imgServicio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="tarjetas">
+                    <img src="imagenes/bufet.png" alt="una mesa bufet" class="imgServicio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+        </section>
+        <section id="fotos">
+            <h2 class="titulos">FOTOS</h2>
+            <hr class="lineaNegra">
+            <div class="container">
+              <input type="radio" name="slides" id="radio1" checked>
+              <input type="radio" name="slides" id="radio2">
+              <input type="radio" name="slides" id="radio3">
+              <input type="radio" name="slides" id="radio4" >
+              <input type="radio" name="slides" id="radio5">
+              <input type="radio" name="slides" id="radio6">
+
+              <ul class="slides">
+                  <li class="slide">
+                          <img src="imagenes/slide1.jpeg" alt="">
+                  </li>
+
+                  <li class="slide">
+
+                          <img src="imagenes/slide2.jpeg" alt="">
+                  </li>
+
+                  <li class="slide">
+
+                          <img src="imagenes/slide3.jpeg" alt="">
+
+                  </li>
+                  <li class="slide">
+                    <img src="imagenes/slide5.jpeg" alt="">
+                  </li>
+
+                  <li class="slide">
+
+                          <img src="imagenes/slider6.jpg" alt="">
+                  </li>
+
+                  <li class="slide">
+
+                          <img src="imagenes/slider7.jpg" alt="">
+
+                  </li>
+              </ul>
+
+              <div class="navigation">
+                  <label for="radio1" id="radioselct1" ></label>
+                  <label for="radio2" id="radioselct2"></label>
+                  <label for="radio3" id="radioselct3"></label>
+                  
+                    <label for="radio4" id="radioselct4" ></label>
+                    <label for="radio5" id="radioselct5"></label>
+                    <label for="radio6" id="radioselct6"></label>
+                
+              </div>
+            </div>
+        </section>
+        <section id="formulario">
+          <h2 class="titulos">FORMULARIO</h2>
+            <hr class="lineaNegra">
+          <form action="mailto:araba_cateringservice@hotmail.com" method="post" enctype="text/plain">
+            <label for="nombre"></label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="formAraba">
+
+            <label for="apellidos"></label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="formAraba">
+
+            <label for="telefono"></label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Número de teléfono" class="formAraba">
+
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Correo Electrónico" class="formAraba">
+
+            <label for="mensaje"></label>
+            <textarea name="mensajes" id="mensaje" cols="40" rows="20" placeholder="Mensajes"></textarea>
+            
+            <input type="submit" name="enviar" id="submit" placeholder="Enviar">
+          </form>
+        </section>
+    </main>
+</body>
+</html>
