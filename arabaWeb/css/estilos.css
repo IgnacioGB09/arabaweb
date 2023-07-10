@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family:'Adam';
+    src: url('../fonts/ADAM.CGPRO.otf');
+}
+.tipografia{
+    font-family: 'Adam';
+    
+} 
+.texRoboto{
+    font-family: 'Roboto';
+}
+#navResponsive{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+#barraNavegacion{
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#navResponsive .fa{
+    font-size: 2em;
+}
+#araba{
+    width: 7em;
+    padding-bottom: 1em;
+    
+}
+header input, header #barraNavegacion ul{
+    display: none;
+}
+header input:checked ~ #barraNavegacion .primeraLista{
+    display: block;
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    padding-bottom: 1em;
+}
+
+#barraNavegacion ul li{
+    margin-top: 1em;
+    text-align: center;
+}
+.segundaLista{
+    display: flex;
+    margin:1em 1.5em 0 0 ;
+}
+
+.segundaLista  li{
+    margin-left: 1.5em;
+}
+
+.iconos{
+    width: 1.5em;
+}
+#facebook{
+    width: 1.2em;
+}
+ul li {
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+} 
+
+.textoNegro{
+    color: black;
+    
+}
+
+.lineaNegra, .lineaNegra1{
+    margin:0 1.5em;
+    height: 1.5em;
+    background-color: black;
+    border: none;
+}
+
+
+.lineaNegra1{
+    display: none;
+}
+
+#imgHeader{ 
+    background-image: url(../imagenes/arabaHeader1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulos{
+    font-family:'Adam';
+}
+h1{
+  
+    text-align: center;
+   padding: 2em;
+}
+h2{
+    text-align: center;
+    padding: 3.5em 0 1em 0;
+    
+}
+#imgSomos{
+    background-image: url(../imagenes/quienesSomo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.margenImg{
+    margin-top: 2em;   
+}
+
+.colorBlanco{
+    color: white;
+    
+    line-height: 1.5em;
+}
+#somosTex{
+    text-align: center;
+    font-size: 2em;
+    padding: 0.5em;
+}
+#servicios{
+    display: flex;
+    flex-direction: column;
+}
+.contenedorTarjetas{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+
+}
+.botonCarrusel{
+    display: none;
+}
+
+.contenedorTarjetas::-webkit-scrollbar{
+    background-color:transparent;
+    height: 0.5em;
+    
+}
+.contenedorTarjetas::-webkit-scrollbar-thumb{
+    background-color: black;
+    border-radius:50px ;
+}
+
+.tarjetas{
+    background-color: #880606;
+    width: 17em;
+    margin-top: 2em;
+    border-radius: 133px 133px 0 0;
+    justify-self: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0.5em 1em 1em;
+    
+}
+
+ .tarjetas p{
+    padding: 1em;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+.parrilladas img {
+    padding-bottom: 2.3em;
+    
+}
+#formulario{
+    width: 100%;
+}
+
+form{
+    margin-top: 1em;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    
+}
+
+.formAraba{
+    width: 100%;
+    justify-self: stretch;
+    padding: 1em 0;
+    text-align: center;
+}
+textarea, input{
+    margin-top: 1em;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 1em;
+    color: black;
+}
+textarea{
+    /* place-self: center; */
+    width: 94%;
+    height: 50vh;
+    
+}
+input::placeholder,textarea::placeholder{
+    color: black;
+    font-size:1.5em;
+    
+
+}
+
+#submit{
+    padding:0.2em 1.8em;
+    font-size: 2em;
+    margin-bottom: 1em;
+    place-self: center;
+    background-color: #C13939;
+    border: none;
+
+}
+footer{
+  /*   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+footer .contenedorTitulo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+ #arabaFooter{
+    width: 9em;
+    place-self: center;
+    margin-top: 5em;
+    margin-bottom: 1.5em;
+}
+.imgFooter{
+   text-align: center;
+   
+   
+    
+}
+.texCenter{
+    color: black;
+    font-family:'Roboto';
+    
+}
+.imgFooter li a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+
+.imgFooter img{
+    margin-bottom:1em;
+}
+
+@media(min-width: 1200px) {
+    #navResponsive{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 1em;
+    
+    }
+
+    #navResponsive #araba{
+        margin-right: 5em;
+        width: 8em;
+        position: static;
+        z-index: 1;
+        background-color: white;
+        padding: 1em;
+        
+    }
+    .segundaLista{
+        margin-right: 12em;
+    }
+    
+    #navResponsive label{
+        display: none;
+    }
+
+     header #barraNavegacion ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center; 
+    }
+
+    #barraNavegacion ul li a{
+        margin-left: 2em;
+        font-size: 1em;
+    }
+
+    #barraNavegacion {
+        order: -1;
+        margin-bottom: 1.5em;
+       
+    }
+    #lineaHeader{
+        position: relative;
+        bottom: 3.5em;
+    }
+
+    
+    #imgHeader{
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 4em;
+    }
+    
+    .lineaNegra1{
+        display: block;
+    }
+    .contenedorTitulo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding:8em 0 6em 0;
+    }
+
+    footer .contenedorTitulo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding:1em;
+        width: 100%;
+    }
+    .contenedorTitulo .lineaNegra, .contenedorTitulo .lineaNegra1{
+        width: 35em;
+    }
+    h2{
+        padding: 0;
+    }
+    #imgSomos{
+        height:48em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tarjetas{
+        margin-left: 5em;
+    }
+   
+    form{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,auto);
+        margin: 3em;
+        background-color:transparent;
+        gap: 4em;
+        row-gap: 0;
+        place-self: center stretch;
+    }
+    #nombre{
+        grid-column: 1/2;
+        grid-row:1;
+
+    }
+    #apellidos{
+        grid-column: 2/4;
+        grid-row: 1;
+    }
+    #telefono{
+        grid-column:1/2 ;
+        grid-row:2;
+
+    }
+    #email{
+        grid-column: 2/4;
+        grid-row: 2;
+
+    }
+    #mensaje{
+        grid-column: 1/4;
+        grid-row: 3;
+        place-self: center stretch;
+        width: 100%;
+    }
+    #submit{
+        grid-row: 4;
+        grid-column: 1/4;
+
+    }
+    input,textarea{
+        background-color: #D9D9D9;
+        border: none;
+    }
+    input::placeholder,textarea::placeholder{
+        color: black;
+    }
+        
+    #arabaFooter{
+        margin-top: 0.25em;
+    }
+    .imgFooter { 
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .imgFooter li a {
+        flex-direction: row;
+        gap:1em;
+    }  
+    .footerImg{
+        margin-top: 1em;
+    }
+
+    .botonCarrusel{
+        display: block;
+        margin-left: 1em;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        font-size: 1.5em;
+        padding: 0.3em;
+        border: none;
+        border-radius: 0.3em;
+
+        
+    }
+
+    #servicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorTarjetas{
+        display: flex;
+        align-items: center;
+        overflow-x: hidden;
+        overscroll-behavior: smooth;
+        width: 100%;
+        max-width: 1200px;
+       
+    
+    }
+    #botonesConetedor{
+        margin: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tarjetas{
+        margin:1em 4em 1em ;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+   
+    
+} 
